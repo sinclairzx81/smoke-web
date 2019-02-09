@@ -1,0 +1,30 @@
+{
+  "name": "smoke-web",
+  "version": "1.0.0",
+  "description": "A static web server with live reload.",
+  "scripts": {
+    "clean": "smoke-task clean",
+    "pack": "npm install && smoke-task pack",
+    "start": "npm install && smoke-task start",
+    "templates": "npm install && smoke-task templates",
+    "install-cli": "npm install && smoke-task install_cli"
+  },
+  "bin": {
+    "smoke-web": "smoke-web"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sinclairzx81/smoke-web"
+  },
+  "author": "sinclairzx81",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.0.7",
+    "shx": "^0.2.2",
+    "smoke-run": "^1.0.1",
+    "smoke-task": "^1.0.2",
+    "typescript": "^3.2.4",
+    "typescript-bundle": "^1.0.7"
+  }
+}

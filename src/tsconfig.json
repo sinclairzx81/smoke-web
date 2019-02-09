@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "preserveWatchOutput": true,
+    "lib": ["dom", "es6"]
+  },
+  "files": [
+    "index.ts"
+  ]
+}

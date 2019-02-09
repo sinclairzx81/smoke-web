@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <title>smoke-web</title>
+    <script src="/smoke/reload"></script>
+    {{style-element}}
+    {{script-element}}
+  </head>
+  <body>
+    <div id="container">
+      <div id="not-found">
+        <div class='header'>
+          <div class='breadcrumb'>
+            <span>smoke-web</span>
+            <ul>
+              {{breadcrumb}}
+              <!-- 
+              <li><a href='#'>root</a></li>
+              <li><a href='#'>styles</a></li>
+              <li><a href='#'>file</a></li> 
+              -->
+            </ul>
+            <span class='last'>{{filename}}</span>
+          </div>
+        </div>
+        <div class='content'>
+          <div class='listing'>
+            <h3>404 '{{filename}}' not found</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+ 
+</html>
