@@ -2,6 +2,8 @@
 
 A static file server with live reload.
 
+[![NPM package](https://badge.fury.io/js/smoke-web.svg)](https://www.npmjs.com/package/smoke-web)
+
 ```
 $ npm install smoke-web -g
 ```
