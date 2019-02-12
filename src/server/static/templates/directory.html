@@ -60,7 +60,7 @@
       var search = function () {
           var search = getSearch();
           var list = getFileList();
-          var entries = FILES.filter(function (entry) { return entry.name.indexOf(search.value) !== -1; });
+          var entries = FILES.filter(function (entry) { return entry.name.toLowerCase().indexOf(search.value.toLowerCase()) !== -1; });
           var content = entries.map(function (entry) {
               return "<li class='" + entry.className + "'><a alt='" + entry.alt + "' href='" + entry.href + "'>" + entry.name + "</a></li>";
           });
@@ -83,11 +83,6 @@
             <span>smoke-web</span>
             <ul>
               {{breadcrumb}}
-              <!-- 
-              <li><a href='#'>root</a></li>
-              <li><a href='#'>styles</a></li>
-              <li><a href='#'>script</a></li>
-              -->
             </ul>
             <span class='last'><input id='search' type='text' placeholder=""></input></span>
           </div>
@@ -96,13 +91,6 @@
           <div class='listing'>
             <ul>
               {{listing}}
-              <!-- 
-              <li class='directory-item'><a href='#'>scripts</a></li>
-              <li class='directory-item'><a href='#'>styles</a></li>
-              <li class='directory-item'><a href='#'>images</a></li>
-              <li class='file-item'><a href='#'>index.html</a></li>
-              <li class='file-item'><a href='#'>about.html</a></li> 
-             -->
             </ul>
           </div>
         </div>

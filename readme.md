@@ -20,9 +20,9 @@ Smoke-Web is a static file web server that live reloads HTML pages on file chang
 
 $ smoke-web <directory> --port <number> --trace --cors
 
-   Examples: smoke-run ./dist
-             smoke-run ./dist --port 5001
-             smoke-run ./dist --trace
+   Examples: smoke-web ./dist
+             smoke-web ./dist --port 5001
+             smoke-web ./dist --trace
 
    Options:
      --port   The server port. default is 5000.

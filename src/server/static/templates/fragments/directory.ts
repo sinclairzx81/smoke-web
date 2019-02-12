@@ -31,7 +31,7 @@ const readfiles    = () => {
 const search = () => {
   const search  = getSearch()
   const list    = getFileList()
-  const entries = FILES.filter(entry => entry.name.indexOf(search.value) !== -1)
+  const entries = FILES.filter(entry => entry.name.toLowerCase().indexOf(search.value.toLowerCase()) !== -1)
   const content = entries.map(entry => {
     return `<li class='${entry.className}'><a alt='${entry.alt}' href='${entry.href}'>${entry.name}</a></li>`
   })

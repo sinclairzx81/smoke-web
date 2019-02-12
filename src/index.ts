@@ -34,13 +34,13 @@ const esc    = '\x1b[0m'
 
 function info(command: InfoCommand) {
   const buffer = []
-  buffer.push(...['Version 1.0.0',
+  buffer.push(...['Version 1.0.1',
   ``,
   `$ ${green}smoke-web${esc} <directory> --port <number> --trace --cors`,
   ``,
-  `   Examples: ${green}smoke-run${esc} ./dist`,
-  `             ${green}smoke-run${esc} ./dist --port 5001`,
-  `             ${green}smoke-run${esc} ./dist --trace`,
+  `   Examples: ${green}smoke-web${esc} ./dist`,
+  `             ${green}smoke-web${esc} ./dist --port 5001`,
+  `             ${green}smoke-web${esc} ./dist --trace`,
   ``,
   `   Options:`,
   `     ${green}--port${esc}   The server port. default is 5000.`,
