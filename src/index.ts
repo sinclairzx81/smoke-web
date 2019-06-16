@@ -34,7 +34,7 @@ const esc    = '\x1b[0m'
 
 function info(command: InfoCommand) {
   const buffer = []
-  buffer.push(...['Version 1.0.1',
+  buffer.push(...['Version 1.0.2',
   ``,
   `$ ${green}smoke-web${esc} <directory> --port <number> --trace --cors`,
   ``,

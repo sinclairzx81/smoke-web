@@ -1,6 +1,6 @@
 {
   "name": "smoke-web",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A static web server with live reload.",
   "scripts": {
     "clean": "smoke-task clean",

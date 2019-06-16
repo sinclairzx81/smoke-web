@@ -64,9 +64,11 @@ export function createWatcher(directoryPath: string, callback: WatchFunction): W
   const handle      = new WatchHandle()
   const directories = findDirectories(resolve(directoryPath))
   handle.append(directories.map(directoryPath => watch(directoryPath, (_, path) => {
-    const resolvedPath = resolve(join(directoryPath, path))
-    // consideration: recursive directory watch here.
-    reset.run(() => callback(resolvedPath))
+    try {
+      const resolvedPath = resolve(join(directoryPath, path))
+      // consideration: recursive directory watch here.
+      reset.run(() => callback(resolvedPath))
+    } catch { /** unsual 'path as object' error on windows. just ignore */ }
   })))
   return handle
 }
